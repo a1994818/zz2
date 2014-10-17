@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="first" extends="struts-default" namespace="/" >
+		<action name="test" class="action.Query">
+		<result name="SUCCESS">/AuthorInfo.jsp</result>
+		<result name="ERROR">/error.jsp</result>
+		</action>
+		<action name="author" class="action.Query" method="queAuthor2">
+		<result name="SUCCESS">/detail.jsp</result>
+		<result name="ERROR">/error.jsp</result>
+		</action>
+		<action name="Delete" class="action.Delete" method="delete">
+		<result name="SUCCESS">/deleteSuccess.jsp</result>
+		</action>
+	</package>
+</struts>    
